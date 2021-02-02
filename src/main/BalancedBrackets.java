@@ -26,8 +26,11 @@ public class BalancedBrackets {
         for (char ch : str.toCharArray()) {
             if (ch == '[') {
                 brackets++;
-            } else if (ch == ']') {
+            } else if (ch == ']'){
                 brackets--;
+                if(brackets < 0){ //checks order of brackets
+                    break;
+                }
             }
         }
         return brackets == 0;
