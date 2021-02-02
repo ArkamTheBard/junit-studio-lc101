@@ -28,7 +28,7 @@ public class BalancedBrackets {
                 brackets++;
             } else if (ch == ']'){
                 brackets--;
-                if(brackets < 0){ //checks order of brackets
+                if(brackets < 1){ //checks order of brackets
                     break;
                 }
             }
